@@ -11,8 +11,7 @@ import Router from "./routes";
 import ThemeProvider from "./theme";
 import "./App.css";
 
-// components
-import { StyledChart } from "./components/chart";
+
 import ScrollToTop from "./components/scroll-to-top";
 
 import { msalConfig, loginRequest } from "./auth/authConfig";
@@ -88,7 +87,7 @@ export default function App() {
           <ThemeProvider>
             <SnackbarProvider>
               <ScrollToTop />
-              <StyledChart />
+              
               <MsalProvider instance={msalInstance}>
                 <AuthProvider>
                   <Router />
