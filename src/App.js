@@ -38,11 +38,11 @@ msalInstance.addEventCallback((event) => {
     msalInstance
       .acquireTokenSilent(loginRequest)
       .then((response) => {
-        localStorage.setItem("hrms-token", response.accessToken);
+        localStorage.setItem("Application-token", response.accessToken);
 
         getProfilecGraph().then((responseProfile) => {
           // console.log(responseProfile);
-          localStorage.setItem("hrms-profile", JSON.stringify(responseProfile));
+          localStorage.setItem("Application-profile", JSON.stringify(responseProfile));
         });
       })
       .catch((error) => {
@@ -58,10 +58,10 @@ msalInstance.addEventCallback((event) => {
     msalInstance
       .acquireTokenSilent(loginRequest)
       .then((response) => {
-        localStorage.setItem("hrms-token", response.accessToken);
+        localStorage.setItem("Application-token", response.accessToken);
 
         getProfilecGraph().then((responseProfile) => {
-          localStorage.setItem("hrms-profile", JSON.stringify(responseProfile));
+          localStorage.setItem("Application-profile", JSON.stringify(responseProfile));
         });
       })
       .catch((error) => {

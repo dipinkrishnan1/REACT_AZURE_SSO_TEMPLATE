@@ -3,7 +3,7 @@ import axios from "axios";
 export default async function secureAPIGraph(endpoint) {
   const fullEndpoint = `${endpoint}`;
   const headers = {
-    Authorization: `Bearer ${localStorage.getItem("hrms-token")}`,
+    Authorization: `Bearer ${localStorage.getItem("Application-token")}`,
     "Content-Type": "application/json",
   };
   const config = {

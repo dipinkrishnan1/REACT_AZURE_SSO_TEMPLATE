@@ -96,9 +96,9 @@ export default function AccountPopover() {
   };
 
   const handleLogout = () => {
-    localStorage.clear("hrms-profilepic");
-    localStorage.clear("hrms-profile");
-    localStorage.clear("hrms-token");
+    localStorage.clear("Application-profilepic");
+    localStorage.clear("Application-profile");
+    localStorage.clear("Application-token");
     handleClose();
     instance.logoutRedirect();
   };
