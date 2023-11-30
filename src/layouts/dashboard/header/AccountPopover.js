@@ -25,7 +25,7 @@ const MENU_OPTIONS = [
   //   path: '/dashboard/about',
   // },
   {
-    label: "Profile",
+    label: "Common Page",
     icon: "eva:person-fill",
     path: "/dashboard/profile",
   },

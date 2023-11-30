@@ -14,7 +14,7 @@ const navConfig = ({ isAdmin }) => {
   return isAdmin
     ? [
         {
-          title: "Profile Page",
+          title: "Common Page ",
           path: "/dashboard/profile",
           icon: icon("ic_profile"),
         },
@@ -27,7 +27,7 @@ const navConfig = ({ isAdmin }) => {
       ]
     : [
         {
-          title: "Profile",
+          title: "Common Page",
           path: "/dashboard/profile",
           icon: icon("ic_profile"),
         }
