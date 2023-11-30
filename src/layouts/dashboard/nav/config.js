@@ -19,6 +19,11 @@ const navConfig = ({ isAdmin }) => {
           icon: icon("ic_profile"),
         },
         {
+          title: "Common Page 2 ",
+          path: "/dashboard/commonpage2",
+          icon: icon("ic_profile"),
+        },
+        {
           title: "Admin Page",
           path: "/dashboard/admin",
           icon: icon("ic_orgdashboard"),
@@ -30,7 +35,12 @@ const navConfig = ({ isAdmin }) => {
           title: "Common Page",
           path: "/dashboard/profile",
           icon: icon("ic_profile"),
-        }
+        },
+        {
+          title: "Common Page 2 ",
+          path: "/dashboard/commonpage2",
+          icon: icon("ic_profile"),
+        },
         
       ];
 };

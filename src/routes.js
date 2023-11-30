@@ -4,7 +4,8 @@ import DashboardLayout from "./layouts/dashboard";
 
 import Page404 from "./pages/Page404";
 
-import ProfilePage from "./pages/ProfilePage";
+import ProfilePage from "./pages/CommonPage"; 
+import CommonPage2 from "./pages/CommonPage2";
 import Admin from "./pages/Admin";
 
 import { LandingPage } from "./sections/auth/login/LandingPage";
@@ -27,6 +28,10 @@ export default function Router() {
         {
           path: "admin",
           element: <Admin/>,
+        },
+        {
+          path: "commonpage2",
+          element: <CommonPage2/>,
         },
         {
           path: "profile",
