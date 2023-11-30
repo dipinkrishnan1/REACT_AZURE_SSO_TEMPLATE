@@ -25,7 +25,7 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/profile" />, index: true },
         {
-          path: "accesshub",
+          path: "admin",
           element: <AccessHub/>,
         },
         {

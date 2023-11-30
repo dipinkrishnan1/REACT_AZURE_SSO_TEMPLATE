@@ -55,6 +55,11 @@ Before you begin, ensure you have the following installed:
     ```
 
     The app will be accessible at `http://localhost:3000`. Any login functionality will now use Azure SSO.
+7. User Role:
+
+    User Role Can configured in src\auth\AuthContext.js
+
+    
 
 ## Additional Configuration
 

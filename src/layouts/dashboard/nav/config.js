@@ -14,13 +14,13 @@ const navConfig = ({ isAdmin }) => {
   return isAdmin
     ? [
         {
-          title: "Profile",
+          title: "Profile Page",
           path: "/dashboard/profile",
           icon: icon("ic_profile"),
         },
         {
-          title: "Access Hub",
-          path: "/dashboard/accesshub",
+          title: "Admin Page",
+          path: "/dashboard/admin",
           icon: icon("ic_orgdashboard"),
           isAdmin: icon("ic_admin"),
         }
