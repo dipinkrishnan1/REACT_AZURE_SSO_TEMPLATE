@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useMsal } from "@azure/msal-react";
 
 import { Navigate } from "react-router-dom";
-import LoginPage from "src/pages/LoginPage";
 
 export const LandingPage = () => {
   const { instance } = useMsal();
@@ -29,7 +28,7 @@ export const LandingPage = () => {
         // eslint-disable-next-line react/prop-types
         <Navigate to="/dashboard/profile" />
       ) : (
-        <LoginPage />
+        <h4>Logging in...</h4>
       )}
     </>
   );

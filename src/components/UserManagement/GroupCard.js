@@ -8,7 +8,7 @@ import ClearIcon from "@mui/icons-material/Clear";
 const GroupCard = ({ group, handleDeleteUser, handleAddUser, handleExpand }) => {
   const theme = useTheme();
   return (
-    <Card sx={{  backgroundImage:`${theme.palette.mode=="light" ? 'linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(242 243 245) 100%)' :'' }`}}>
+    <Card sx={{  backgroundImage:`${theme.palette.mode==="light" ? 'linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(242 243 245) 100%)' :'' }`}}>
       <CardHeader
         title={group.groupName}
         subheader={group.description}
