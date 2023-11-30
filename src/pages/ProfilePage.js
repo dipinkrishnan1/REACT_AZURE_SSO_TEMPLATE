@@ -17,7 +17,7 @@ export default function DashboardAppPage() {
     setTimeout(()=>{
 
       setProfile(JSON.parse(localStorage.getItem("Application-profile")));
-    },1000)
+    },500)
      
   },[])
 

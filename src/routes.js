@@ -5,7 +5,7 @@ import DashboardLayout from "./layouts/dashboard";
 import Page404 from "./pages/Page404";
 
 import ProfilePage from "./pages/ProfilePage";
-import AccessHub from "./pages/AccessHub";
+import Admin from "./pages/Admin";
 
 import { LandingPage } from "./sections/auth/login/LandingPage";
 import { RouteGuard } from "./auth/RouteGuard";
@@ -26,7 +26,7 @@ export default function Router() {
         { element: <Navigate to="/dashboard/profile" />, index: true },
         {
           path: "admin",
-          element: <AccessHub/>,
+          element: <Admin/>,
         },
         {
           path: "profile",

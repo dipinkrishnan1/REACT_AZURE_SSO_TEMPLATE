@@ -7,7 +7,7 @@ import { useMsal } from "@azure/msal-react";
 
 
 
-export default function AccessHub() {
+export default function Admin() {
   const { accounts } = useMsal();
   const user = accounts[0];
   const account = {
@@ -36,6 +36,7 @@ export default function AccessHub() {
         
           </Box>
           <h3>Admin page</h3>
+          <p>User role configured in `src\auth\AuthContext.js`</p>
       </Container>
     </>
   );
