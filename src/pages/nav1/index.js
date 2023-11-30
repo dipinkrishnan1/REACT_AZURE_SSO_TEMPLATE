@@ -1,0 +1,9 @@
+export { default as EditPrimarySkills } from "./EditPrimarySkills";
+export { default as EditOtherSkills } from "./EditOtherSkills";
+export { default as EditEducation } from "./EditEducation";
+export { default as EditExperience } from "./EditExperience";
+export { default as EditTraining } from "./EditTraining";
+export { default as EditCertificationsandLicenses } from "./EditCertificationsandLicenses";
+export { default as AddTraining } from "./AddTraining";
+export { default as AddCertification } from "./AddCertification";
+export { default as UpdateEmployee } from "./UpdateEmployee";
