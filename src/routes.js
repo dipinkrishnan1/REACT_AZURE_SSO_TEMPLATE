@@ -34,21 +34,13 @@ export default function Router() {
             { element: <ProfilePage />, index: true },
           ],
         },
-        // { path: 'products', element: <ProductsPage /> },
-        // { path: 'blog', element: <BlogPage /> },
+
       ],
     },
-    // {
-    //   element: <SimpleLayout />,
-    //   children: [
-    //     { element: <Navigate to="/dashboard/app" />, index: true },
-    //     { path: '404', element: <Page404 /> },
-    //     { path: '*', element: <Navigate to="/404" /> },
-    //   ],
-    // },
+ 
     {
       path: "/",
-      element: <LandingPage />,
+      element:     <RouteGuard><LandingPage /></RouteGuard>,
     },
     { path: "404", element: <Page404 /> },
     {

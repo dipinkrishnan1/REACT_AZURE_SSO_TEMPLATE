@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useMsal } from "@azure/msal-react";
-
 import { Navigate } from "react-router-dom";
 
 export const LandingPage = () => {
@@ -8,18 +7,15 @@ export const LandingPage = () => {
   const [isAuthorized, setIsAuthorized] = useState(false);
 
   const currentAccount = instance.getActiveAccount();
-
-  const onLoad = async () => {
-    // console.log('currentAccount.idTokenClaims', currentAccount.idTokenClaims, currentAccount);
-    if (currentAccount) {
-      // eslint-disable-next-line react/prop-types
-      setIsAuthorized(true);
-    }
-  };
-
   useEffect(() => {
+    const onLoad = () => {
+      if (currentAccount) {
+        setIsAuthorized(true);
+      }
+  
+    };
     onLoad();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [instance, currentAccount]);
 
   return (

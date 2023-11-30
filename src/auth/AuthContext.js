@@ -1,8 +1,8 @@
-// AuthContext.js
+
 import { useMsal } from "@azure/msal-react";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-import getEmployee from "src/api/getEmployeeDetails";
+
 
 const AuthContext = createContext();
 
@@ -16,12 +16,11 @@ export const AuthProvider = ({ children }) => {
   const account = {
     displayName: user?.name,
     email: user?.username,
-    // photoURL: '/assets/images/avatars/avatar_default.jpg',
+ 
   };
   useEffect(() => {
     const checkAdmin = async () => {
-      const response = await getEmployee("view", account.email);
-      setIsAdmin(response.isAdmin);
+      setIsAdmin(true); //Setting to Admin
       setLoading(false);
     };
     checkAdmin();

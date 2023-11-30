@@ -13,7 +13,7 @@ export const RouteGuard = ({ ...props }) => {
     ...loginRequest,
   };
   const onLoad = async () => {
-    // console.log('currentAccount.idTokenClaims', currentAccount.idTokenClaims, currentAccount);
+   
     if (currentAccount) {
       // eslint-disable-next-line react/prop-types
       setIsAuthorized(true);
